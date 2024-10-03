@@ -70,6 +70,15 @@ Presumptions:-
   - The sequence in which the clues are inserted is alphabetical.
   - The tree does not permit duplicates.
 
+----------------------------------------------------------------------------------
+
+Instructions To Run The Code
+
+  - Ensure that the Java Development Environment is setup in your system.
+  - Compile the java file in the command line using command: Javac filename.java.
+  - After compiling successfully run the program using command: Java filename.
+  - After running the program successfully you can see the output in the console. 
+
 
 
 
