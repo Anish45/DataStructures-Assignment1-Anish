@@ -43,3 +43,33 @@ Presumptions:-
   - Scroll titles are unique and can only be pushed once;
   - The stack functions according to LIFO (Last In, First Out).
 
+
+4) Explorer Queue
+
+This application lets users add and remove explorers from a queue while keeping track of how many people are in line to attend a temple.
+
+
+The Approach :-
+  - Used an array to hold explorer names in a circular queue.
+  - Offered ways to verify the status of the queue and to enqueue and dequeue explorers.
+
+Presumptions:-
+  - When the queue is initialized, its size is fixed;
+  - When the queue is full, explorers cannot be enqueued.
+
+
+5) Clue Tree
+
+Using a binary search tree (BST), this application stores and organizes clues so that users can insert, locate, and explore them in whatever sequence they choose.
+
+The Approach :-
+  - To represent each hint and its offspring, a Node class was created.
+  - The ClueTree class was implemented to manage traversal techniques, counting, searching, and insertion.
+
+Presumptions:-
+  - The sequence in which the clues are inserted is alphabetical.
+  - The tree does not permit duplicates.
+
+
+
+
