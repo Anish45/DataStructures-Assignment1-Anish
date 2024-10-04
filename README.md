@@ -149,4 +149,18 @@ Ensure you have the Java Development Kit (JDK) installed on your system. You can
 1. *Clone the repository:*
 
    ```bash
-   git clone https://github.com/your-username/DataStructures-Assignment1-Anish.git 
+   git clone https://github.com/your-username/DataStructures-Assignment1-Anish.git
+
+2. *Compile java code:*
+
+   ```bash
+   Javac Filename.java
+
+3. *Run Java Code:*
+
+   ```bash
+   Java Filename
+
+4. *Output:*
+
+   After running the program successfully you can see the output in the console.
