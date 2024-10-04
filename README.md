@@ -1,84 +1,152 @@
-# DataStructures-Assignment1-Anish
+# Data Structures - Assignment 1
 
-Name: Anish Chaudhary
-Student-Id: C0916426
+![Java](https://img.shields.io/badge/Language-Java-blue.svg)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-1) Artifact Vault
+## Author
 
-The purpose of this software is to maintain an age-sorted collection of artifacts by allowing users to add, remove, and search for artifacts using an array-based structure.
+*Anish Chaudhary*  
+*Student ID*: C0916426
 
-The Approach:- 
-  - created an Artifact class to provide a name and age for each individual artifact.
-  - To handle an array of Artifact objects, a class called ArtifactVault was created. It contains methods for adding, removing, and searching artifacts.
-  - Java Streams was used to implement the sorting of artifacts by age following each addition.
+---
 
-Presumptions
-  - The vault's initialization defines its fixed capacity.
-  - Artifacts must have unique names in order to be added.
+## Table of Contents
 
+- [Overview](#overview)
+- [Implementations](#implementations)
+  - [1. Artifact Vault](#1-artifact-vault)
+  - [2. Labyrinth Path](#2-labyrinth-path)
+  - [3. Scroll Stack](#3-scroll-stack)
+  - [4. Explorer Queue](#4-explorer-queue)
+  - [5. Clue Tree](#5-clue-tree)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contact](#contact)
+- [License](#license)
 
-2) Labyrinth Path
+---
 
-Using a linked list structure, this software keeps track of a path through a labyrinth. Users can add and remove sites, check for loops, and display the path.
+## Overview
 
-The Approach:-
-  - Created a PathNode class to symbolize every point along the path.
-  - To manage the linked list of PathNode objects, a LabyrinthPath class was created, including methods for adding, removing, and searching locations.
-  - Applied Floyd's Cycle Detection method to loop detection.
+This repository contains five Java implementations of fundamental data structures developed as part of the Data Structures course assignment. Each project demonstrates the practical application of different data structures, including arrays, linked lists, stacks, queues, and binary search trees (BST), to solve specific problems.
 
-Presumptions:-
-   - The linked list structure facilitates simple location removal and traversal
-   - The path can expand dynamically as new locations are added.
+---
 
+## Implementations
 
-3) Scroll Stack
+### 1. Artifact Vault
 
-This software simulates a stack structure to manage scrolls, offering ability to push, pop, peek, and check for the existence of scrolls.
+*Description:*  
+A system that maintains an age-sorted collection of artifacts, allowing users to add, remove, and search for artifacts. Artifacts are stored in an array and sorted using Java Streams after each addition.
 
-The Approach :-
-  - To maintain scroll titles, Java's Stack class was utilized.
-  - Put into practice techniques for popping and pushing scrolls, looking up at the top scroll, and determining whether a certain scroll is there.
+*Classes:*
+- Artifact
+- ArtifactVault
 
-Presumptions:- 
-  - Scroll titles are unique and can only be pushed once;
-  - The stack functions according to LIFO (Last In, First Out).
+*Data Structure:*  
+Array-based storage.
 
+*Features:*
+- Add artifacts
+- Remove artifacts
+- Search for artifacts
 
-4) Explorer Queue
+*Assumptions:*
+- Fixed capacity for the vault
+- Unique artifact names
 
-This application lets users add and remove explorers from a queue while keeping track of how many people are in line to attend a temple.
+---
 
+### 2. Labyrinth Path
 
-The Approach :-
-  - Used an array to hold explorer names in a circular queue.
-  - Offered ways to verify the status of the queue and to enqueue and dequeue explorers.
+*Description:*  
+A labyrinth navigation system that tracks a path using a linked list. Users can add and remove locations, check for loops, and display the path. Floyd’s Cycle Detection method is implemented to identify loops.
 
-Presumptions:-
-  - When the queue is initialized, its size is fixed;
-  - When the queue is full, explorers cannot be enqueued.
+*Classes:*
+- PathNode
+- LabyrinthPath
 
+*Data Structure:*  
+Linked list.
 
-5) Clue Tree
+*Features:*
+- Add locations
+- Remove locations
+- Detect loops
+- Display the path
 
-Using a binary search tree (BST), this application stores and organizes clues so that users can insert, locate, and explore them in whatever sequence they choose.
+*Assumptions:*
+- Dynamic expansion of the path as new locations are added
 
-The Approach :-
-  - To represent each hint and its offspring, a Node class was created.
-  - The ClueTree class was implemented to manage traversal techniques, counting, searching, and insertion.
+---
 
-Presumptions:-
-  - The sequence in which the clues are inserted is alphabetical.
-  - The tree does not permit duplicates.
+### 3. Scroll Stack
 
-----------------------------------------------------------------------------------
+*Description:*  
+A stack-based system for managing scrolls, allowing users to push, pop, peek, and check for the existence of scrolls. The stack adheres to the Last In, First Out (LIFO) principle.
 
-Instructions To Run The Code
+*Data Structure:*  
+Stack (Java's built-in Stack class).
 
-  - Ensure that the Java Development Environment is setup in your system.
-  - Compile the java file in the command line using command: Javac filename.java.
-  - After compiling successfully run the program using command: Java filename.
-  - After running the program successfully you can see the output in the console. 
+*Features:*
+- Push scrolls
+- Pop scrolls
+- Peek at the top scroll
+- Search for scrolls
 
+*Assumptions:*
+- Scroll titles are unique
+- Stack operates on LIFO basis
 
+---
 
+### 4. Explorer Queue
 
+*Description:*  
+A system for managing explorers in a queue, enabling users to add and remove explorers while tracking the number of people in line to attend a temple. Utilizes a circular queue for efficient operations.
+
+*Data Structure:*  
+Circular queue (array-based).
+
+*Features:*
+- Enqueue explorers
+- Dequeue explorers
+- Check queue status
+
+*Assumptions:*
+- Fixed queue size upon initialization
+- No enqueuing when the queue is full
+
+---
+
+### 5. Clue Tree
+
+*Description:*  
+A binary search tree (BST) application that stores and organizes clues. Users can insert, locate, and traverse clues in various orders.
+
+*Classes:*
+- Node
+- ClueTree
+
+*Data Structure:*  
+Binary Search Tree (BST).
+
+*Features:*
+- Insert clues
+- Search for clues
+- Traverse the tree (in-order, pre-order, post-order)
+
+*Assumptions:*
+- Clues are inserted in alphabetical order
+- No duplicate clues allowed
+
+---
+
+## Installation
+
+Ensure you have the Java Development Kit (JDK) installed on your system. You can download it from [Oracle's official website](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
+
+1. *Clone the repository:*
+
+   ```bash
+   git clone https://github.com/your-username/DataStructures-Assignment1-Anish.git 
