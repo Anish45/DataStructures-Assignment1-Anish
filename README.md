@@ -20,9 +20,7 @@
   - [4. Explorer Queue](#4-explorer-queue)
   - [5. Clue Tree](#5-clue-tree)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Contact](#contact)
-- [License](#license)
+
 
 ---
 
