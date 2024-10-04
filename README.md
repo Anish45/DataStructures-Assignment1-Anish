@@ -5,7 +5,7 @@
 
 ## Author
 
-*Anish Chaudhary*  
+*Student Name* : Anish Chaudhary  
 *Student ID*: C0916426
 
 ---
